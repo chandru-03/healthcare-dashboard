@@ -1,0 +1,41 @@
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 952px) {
+  .dashboard {
+    gap: 10px;
+    width: 100vw;
+    margin-left: 50%;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    margin-left: 0%;
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    margin-left: 0%;
+  }
+  
+}

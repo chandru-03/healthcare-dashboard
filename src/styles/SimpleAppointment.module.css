@@ -1,0 +1,75 @@
+.simpleScheduleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;  
+    color: #222658;
+    width: 100% !important;
+    padding: 0px 40px;
+}
+
+.header{
+    font-size: 18px;
+    font-weight: 550;
+    padding: 15px 0px;
+}
+
+.schedule{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.scheduleHeader{
+    font-size: 13px;
+    color: #939da8;
+    padding: 10px 0px;
+}
+
+
+.container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.content{
+    flex: 1;
+    min-width: 180px;
+    max-width: 300px;
+    min-height: 70px;
+    background-color: #d8def7;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 13px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    color: #1f2a50;
+    padding: 8px 20px;
+}
+
+.contentHeader{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    gap: 20px;
+}
+
+.contentTime{
+    margin: 0%;
+    padding: 0%;
+    color: #555;
+    font-size: 13px;
+}
+
+@media screen and (max-width: 600px) {
+    .simpleScheduleContainer{
+        padding: 0px 20px;
+    }
+    
+}

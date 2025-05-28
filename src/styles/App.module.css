@@ -1,0 +1,34 @@
+.FlexContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.Sidebar {
+  width: 15.92%;
+  height: 100vh;
+  background-color: #f5f9ff;
+  overflow: hidden;
+}
+
+.Dashboard{
+  width: 84.08%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+@media screen and (max-width: 952px) {
+  .FlexContainer, .Dashboard, .Sidebar {
+    overflow-y: auto;
+  }
+
+  .Sidebar{
+    width: 10%;
+  }
+  
+}

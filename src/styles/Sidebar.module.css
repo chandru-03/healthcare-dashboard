@@ -1,0 +1,75 @@
+.sidebarContainer{
+    display: flex;
+    flex-direction: column;
+    width: 82.5%;
+    justify-content: center ;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-left: 66px;
+    overflow-y: hidden;
+}
+
+.sidebarContainer p{
+    font-weight: 400;
+    font-size: 12px;
+    color: #dbdfe5;
+}
+
+.menuList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuItem{
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #939da8;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.active{
+    color: #101537;
+}
+
+@media screen and (max-width: 1250px) {
+
+    .sidebarContainer {
+        margin-left: 10%;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sidebarContainer span{
+        display: none;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .menuItem{
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .sidebarContainer{
+        margin-left: 0%;
+        transition: all 0.3s ease-in-out;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .sidebarContainer{
+        margin-left: 0%;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+    
+}

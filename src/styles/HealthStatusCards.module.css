@@ -1,0 +1,135 @@
+.healthStatusContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 0.6;
+  width: 100%;
+  max-width: 700px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  margin: 0%;
+}
+
+.healthStatusCard {
+  background-color: #f6faff;
+  width: 170px;
+  height: 120px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.statusHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 60px;
+}
+
+.statusHeader :where(h4) {
+  color: #222658;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.date {
+  font-size: 12px;
+  color: #939da8;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  border-radius: 5px;
+  margin: 8px 0px;
+  background-color: #e1e4ee;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 5px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  color: #222658;
+  font-size: 14px;
+  gap: 7px;
+}
+
+@media screen and (max-width: 952px) {
+  .healthStatusContainer {
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    gap: 10px;
+  }
+
+  .healthStatusCard{
+    width: 170px;
+  }
+
+  .details {
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .healthStatusContainer {
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .healthStatusCard {
+    height: 150px;
+    width: 150px;
+  }
+
+  .details {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .healthStatusContainer {
+    gap: 15px;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .healthStatusCard {
+    height: 150px;
+  }
+
+  .details {
+    justify-content: center;
+  }
+}

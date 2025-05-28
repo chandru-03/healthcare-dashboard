@@ -1,0 +1,155 @@
+.HeaderContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 16px 24px;
+  flex-wrap: nowrap;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.logoPrimary {
+  color: #28cbd3;
+}
+
+.logoSecondary {
+  color: #130d31;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 8px 16px;
+  max-width: 40%;
+}
+
+.searchInput {
+  padding: 8px 3rem;
+  outline: none;
+  border: none;
+  flex: 1;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.searchIcon {
+  position: relative;
+  left: 2.5rem;
+}
+
+.bellIcon {
+  position: relative;
+  right: 2.5rem;
+}
+
+.panelRight {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0%;
+  padding: 0%;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #1ae1e9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 160%;
+  margin-top: 8px;
+  margin-right: 2px;
+}
+
+.plusButton {
+  width: 40px;
+  height: 40px;
+  background-color: #2f3499;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .searchContainer {
+    margin-right: 25rem;
+  }
+  
+}
+
+@media screen and (max-width: 952px) {
+  .HeaderContainer {
+    gap: 10px;
+  }
+
+  .panelRight {
+    margin: 0;
+  }
+
+  .searchContainer {
+    margin-right: 0;
+  }
+
+  .searchInput{
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .HeaderContainer {
+    gap: 10px;
+  }
+
+  .searchContainer {
+    margin-right: 0;
+  }
+
+  .searchInput {
+    width: 30%
+  }
+  
+}
+
+@media screen and (max-width: 600px) {
+  .HeaderContainer {
+    gap: 10px;
+  }
+  .panelRight {
+    gap: 5px;
+  }
+
+  .logo{
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  .searchContainer{
+    margin-right: 0;
+  }
+
+  .searchInput{
+    width: 20% !important;
+  }
+}

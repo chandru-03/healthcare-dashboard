@@ -1,0 +1,192 @@
+.anatomyContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  background-color: #f6faff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.anatomy {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anatomyImage {
+  width: 50%;
+  object-fit: cover;
+}
+
+.zoomIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #7f858e;
+}
+
+.rotationContainer {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotationContainer :where(svg) {
+  width: 90%;
+  object-fit: cover;
+}
+
+.rotateIcon {
+  position: absolute;
+  bottom: 2.5px;
+  background-color: #7f858e;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heartIndicator,
+.legIndicator {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.heartIndicator img,
+.legIndicator img {
+  width: 30px;
+}
+
+.heartIndicator {
+  top: 12vh;
+  left: 7vw;
+}
+
+.legIndicator {
+  top: 34vh;
+  right: 6.2vw;
+}
+
+.heartIndicator :where(span) {
+  background-color: #31319d;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.legIndicator :where(span) {
+  background-color: #19dcea;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 952px) {
+
+  .anatomyContainer {
+    padding: 0%;
+    margin: 0%;
+    max-width: 400px;
+  }
+
+  .anatomyImage {
+    width: 50%;
+    padding: 20px;
+  }
+
+    .heartIndicator, .legIndicator{
+    width: 80%;
+    font-size: 12px;
+  }
+
+  .heartIndicator {
+    top: 13vh;
+    left: 15.5vw;
+  }
+
+  .legIndicator {
+    top: 45vh;
+    right: 8.5vw;
+  }
+
+  
+}
+
+@media screen and (max-width: 768px) {
+  .anatomyContainer {
+    padding: 0%;
+    margin: 0%;
+    max-width: 350px;
+  }
+
+  .anatomyImage {
+    width: 70%;
+    padding: 20px;
+  }
+
+  .heartIndicator, .legIndicator{
+    width: 80%;
+    font-size: 12px;
+  }
+
+  .heartIndicator {
+    top: 16.5vh;
+    left: 9vw;
+    flex-direction: column;
+  }
+
+  .legIndicator {
+    top: 45vh;
+    right: 7vw;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .anatomyContainer {
+    max-width: 300px;
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .anatomyImage {
+    width: 60%;
+  }
+
+    .heartIndicator, .legIndicator{
+    width: 80%;
+    font-size: 12px;
+  }
+
+  .heartIndicator {
+    top: 11vh;
+    left: 23vw;
+    flex-direction: row;
+  }
+
+  .legIndicator {
+    top: 30vh;
+    right: 20vw;
+    flex-direction: row;
+  }
+}

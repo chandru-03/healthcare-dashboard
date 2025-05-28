@@ -1,0 +1,60 @@
+.scheduleContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px  20px;
+    width: 100%;
+}
+
+.scheduleContainer p {
+    font-size: 13px;
+}
+
+.scheduleContainer span{
+    font-size: 11px;
+}
+
+.appointments{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 7px;
+    margin: 0px 0px 0px 50px;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #d8def7 ;
+    color: black;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.appointments.active{
+    background-color: #222658;
+    color: #fff;
+}
+
+.appointments :where(div){
+    display: flex;
+    width: 100% ;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+@media screen and (max-width: 600px) {
+    .scheduleContainer{
+        margin: 15px  0px;
+    }
+
+    .appointments{
+        width: 100%;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+}
+
